@@ -184,7 +184,7 @@ async def main(bot: Client, message: Message):
         user = await get_user(message.from_user.id)
 
         if not user["shortener_api"]:
-            return await message.reply_text(f"Fɪʀsᴛ Cᴏɴɴᴇᴄᴛ Wɪᴛʜ Yᴏᴜʀ Wᴇʙsɪᴛᴇ Aᴘɪ\n\n[Cʟɪᴄᴋ Tᴏ Cᴏɴɴᴇᴄᴛ](https://tamizhmasters.com/member/tools/api)")
+            return await message.reply_text(f"Fɪʀsᴛ Cᴏɴɴᴇᴄᴛ Wɪᴛʜ Yᴏᴜʀ Wᴇʙsɪᴛᴇ Aᴘɪ\n\n[Cʟɪᴄᴋ Tᴏ Cᴏɴɴᴇᴄᴛ](https://vnshortener.com/member/tools/api)")
 
         await add_user_to_database(bot, message)
 
@@ -194,7 +194,7 @@ async def main(bot: Client, message: Message):
                 return
 
         if message.from_user.id in Config.BANNED_USERS:
-            await message.reply_text("Sorry, You are banned!\n\nContact [Support Group](https://t.me/HangOverXD)",
+            await message.reply_text("Sorry, You are banned!\n\nContact [Support Group](https://t.me/abmovierequestgroup)",
                                      disable_web_page_preview=True)
             return
 
@@ -397,12 +397,12 @@ async def start_back(_, query: CallbackQuery):
 
 START_BACK_BUTTON = [
         [
-            InlineKeyboardButton("Cʟɪᴄᴋ Tᴏ Gᴇᴛ Aᴘɪ", url="https://tamizhmasters.com/member/tools/api"),
+            InlineKeyboardButton("Cʟɪᴄᴋ Tᴏ Gᴇᴛ Aᴘɪ", url="https://vnshortener.com/member/tools/api"),
         ],
         [
-            InlineKeyboardButton("Aʟʟ Lɪɴᴋs", url="https://tamizhmasters.com/member/links"),
-            InlineKeyboardButton("Aᴘɪ", url="https://tamizhmasters.com/member/tools/api"),
-            InlineKeyboardButton("PʀᴏFɪʟᴇ", url="https://tamizhmasters.com/member/users/profile"),
+            InlineKeyboardButton("Aʟʟ Lɪɴᴋs", url="https://vnshortener.com/member/links"),
+            InlineKeyboardButton("Aᴘɪ", url="https://vnshortener.com/member/tools/api"),
+            InlineKeyboardButton("PʀᴏFɪʟᴇ", url="https://vnshortener.com/member/users/profile"),
         ],
         [
             InlineKeyboardButton("Hᴇʟᴘ", callback_data="HELP_BUT"),
@@ -424,7 +424,7 @@ async def help(_, query: CallbackQuery):
 
 HELP_BUTTON = [
         [
-            InlineKeyboardButton("📁 Vɪᴅᴇᴏ Tᴜᴛᴏʀɪᴀʟ 📽️", url="https://t.me/All_In_One_Tm_BoT?start=Jdisk_NjI3"),
+            InlineKeyboardButton("🔰Join Update Channel 🔰", url="https://t.me/AB_BotZ_Update"),
         ],
         [
             InlineKeyboardButton("Hᴇʟᴘ 🔘", callback_data="HELP_BUT"),
@@ -442,7 +442,7 @@ async def about(_, query: CallbackQuery):
 
 ABOUT_BUTTON = [
         [
-            InlineKeyboardButton("📁 Vɪᴅᴇᴏ Tᴜᴛᴏʀɪᴀʟ 📽️", url="https://t.me/All_In_One_Tm_BoT?start=Jdisk_NjI3"),
+            InlineKeyboardButton("🔰Join Update Channel 🔰", url="https://t.me/AB_BotZ_Update"),
         ],
         [
             InlineKeyboardButton("Hᴇʟᴘ", callback_data="HELP_BUT"),
@@ -492,13 +492,13 @@ async def button(bot: Client, cmd: CallbackQuery):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("⚡ 𝖢𝖫𝖨𝖢𝖪 𝖳𝖮 𝖢𝖮𝖭𝖭𝖤𝖢𝖳 ⚡", url="https://tamizhmasters.com/member/tools/api")
+                        InlineKeyboardButton("⚡ 𝖢𝖫𝖨𝖢𝖪 𝖳𝖮 𝖢𝖮𝖭𝖭𝖤𝖢𝖳 ⚡", url="https://vnshortener.com/member/tools/api")
                     ],
                     [
-                        InlineKeyboardButton("❓ 𝖧𝖮𝖶 𝖳𝖮 𝖢𝖮𝖭𝖭𝖤𝖢𝖳 ❓", url="https://tamizhmasters.com")
+                        InlineKeyboardButton("❓ 𝖧𝖮𝖶 𝖳𝖮 𝖢𝖮𝖭𝖭𝖤𝖢𝖳 ❓", url="https://t.me/abmoviehouse")
                     ],
                     [
-                        InlineKeyboardButton("⚙️ ʜᴏᴡ ᴛᴏ ᴜsᴇ ⚙️", url="https://tamizhmasters.com")
+                        InlineKeyboardButton("⚙️ ʜᴏᴡ ᴛᴏ ᴜsᴇ ⚙️", url="https://t.me/abmoviehouse")
                     ],
                     [
                         InlineKeyboardButton("✅ 𝖠𝖡𝖮𝖴𝖳 𝖡𝖮𝖳 ✅", callback_data="aboutdevs")
@@ -517,7 +517,7 @@ async def button(bot: Client, cmd: CallbackQuery):
                 user = await bot.get_chat_member(channel_chat_id, cmd.message.chat.id)
                 if user.status == "kicked":
                     await cmd.message.edit(
-                        text="Sorry Sir, You are Banned to use me. Contact my [Support Group](https://t.me/HangOverXD).",
+                        text="Sorry Sir, You are Banned to use me. Contact my [OWNER](https://t.me/Ab_Admin0).",
                         disable_web_page_preview=True
                     )
                     return
@@ -540,7 +540,7 @@ async def button(bot: Client, cmd: CallbackQuery):
                 return
             except Exception:
                 await cmd.message.edit(
-                    text="Something went Wrong. Contact my [Support Group](https://t.me/HangOverXD).",
+                    text="If You Have Any Problem.Contact my [OWNER](https://t.me/Ab_Admin0).",
                     disable_web_page_preview=True
                 )
                 return
@@ -550,8 +550,8 @@ async def button(bot: Client, cmd: CallbackQuery):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("Support Group", url="https://t.me/HangOverXD"),
-                        InlineKeyboardButton("Bots Channel", url="https://t.me/Discovery_Updates")
+                        InlineKeyboardButton("Support Group", url="https://t.me/abmovierequestgroup"),
+                        InlineKeyboardButton("Bots Channel", url="https://t.me/AB_BotZ_Update")
                     ],
                     [
                         InlineKeyboardButton("About Bot", callback_data="aboutbot"),
