@@ -58,7 +58,7 @@ I'ᴍ Uʟᴛʀᴀ Fᴀsᴛ Tᴇʟᴇɢʀᴀᴍ Cᴏᴜʟᴅ Sᴛᴏʀᴀɢᴇ B�
 
 Mᴏʀᴇ Fᴏʀᴍᴀᴛs Cᴏᴍᴍɪɴɢ Sᴏᴏɴ ......
 
-Pᴏᴡᴇʀᴇᴅ Bʏ - [Tᴀᴍɪᴢʜᴀ Mᴀsᴛᴇʀ](https://tamizhmasters.com)"""
+Pᴏᴡᴇʀᴇᴅ Bʏ - @abmoviehouse"""
 
 ABOUT_BOT_TEXT = f"""
 This is Permanent File/Links Store Bot!
@@ -135,12 +135,12 @@ async def start(bot: Client, cmd: Message):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                    InlineKeyboardButton("Cʟɪᴄᴋ Tᴏ Gᴇᴛ Aᴘɪ", url="https://tamizhmasters.com/member/tools/api"),
+                    InlineKeyboardButton("Cʟɪᴄᴋ Tᴏ Gᴇᴛ Aᴘɪ", url="https://vnshortener.com/member/tools/api"),
                 ],
                 [
-                    InlineKeyboardButton("Aʟʟ Lɪɴᴋs", url="https://tamizhmasters.com/member/links"),
-                    InlineKeyboardButton("Aᴘɪ", url="https://tamizhmasters.com/member/tools/api"),
-                    InlineKeyboardButton("PʀᴏFɪʟᴇ", url="https://tamizhmasters.com/member/users/profile"),
+                    InlineKeyboardButton("Aʟʟ Lɪɴᴋs", url="https://vnshortener.com/member/links"),
+                    InlineKeyboardButton("Aᴘɪ", url="https://vnshortener.com/member/tools/api"),
+                    InlineKeyboardButton("PʀᴏFɪʟᴇ", url="https://vnshortener.com/member/users/profile"),
                 ],
                 [
                     InlineKeyboardButton("Hᴇʟᴘ", callback_data="HELP_BUT"),
