@@ -42,7 +42,7 @@ from plugins.users_api import get_user, update_user_info
 
 MediaList = {}
 
-START_MEDIA = "https://graph.org/file/90be379764e989df8b35e.jpg"
+START_MEDIA = "https://graph.org/file/250eaf9cebf980980df65.jpg"
 
 START_TEXT = """**Hɪ/Hᴇʟʟᴏ [{}](tg://user?id={})**
 
