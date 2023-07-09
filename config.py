@@ -9,7 +9,7 @@ class Config(object):
 	API_HASH = os.environ.get("API_HASH", "f201fbe1399ebe8838f765cffb8d6ce5")
 	BOT_TOKEN = os.environ.get("BOT_TOKEN", "6328629995:AAFCG2R4P-eKRpowR2WgQp4XMAN1ACCAppg")
 	BOT_USERNAME = os.environ.get("BOT_USERNAME", "AB_FileStore_Bot")
-	DB_CHANNEL = int(os.environ.get("DB_CHANNEL", "-1001812283852"))
+	DB_CHANNEL = int(os.environ.get("DB_CHANNEL", "-1001908545523"))
 	BOT_OWNER = int(os.environ.get("BOT_OWNER", "5140601098"))
 	DATABASE_URL = os.environ.get("DATABASE_URL", "mongodb+srv://abmovieshouse1:abmovieshouse1@cluster0.gtacdwd.mongodb.net/?retryWrites=true&w=majority")
 	UPDATES_CHANNEL = os.environ.get("UPDATES_CHANNEL", "-1001985963284")
