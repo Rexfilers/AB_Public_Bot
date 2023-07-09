@@ -43,9 +43,9 @@ Send me any file I will save it in my Database. Also works for channel. Add me t
 """
 	ABOUT_DEV_TEXT = f"""
 **🌐 This Bot Was Devloped By** : @Ab_Admin0"""
-	SHORTENER_API_MESSAGE = """To add or update your Shortner Website API, `/apikey api`
+	SHORTENER_API_MESSAGE = """To add or update your Shortner Website API, `/api`
             
-Ex: `/apikey 6LZq851sXofffPHugiKQq`
+Ex: `/api 6LZq851sXofffPHugiKQq`
 
 Current Website: {base_site}
 
