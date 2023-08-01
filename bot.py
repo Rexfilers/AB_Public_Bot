@@ -135,12 +135,12 @@ async def start(bot: Client, cmd: Message):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                    InlineKeyboardButton("Cʟɪᴄᴋ Tᴏ Gᴇᴛ Aᴘɪ", url="https://vnshortener.com/member/tools/api"),
+                    InlineKeyboardButton("Cʟɪᴄᴋ Tᴏ Gᴇᴛ Aᴘɪ", url="http://nestshortener.com/member/tools/api"),
                 ],
                 [
-                    InlineKeyboardButton("Aʟʟ Lɪɴᴋs", url="https://vnshortener.com/member/links"),
-                    InlineKeyboardButton("Aᴘɪ", url="https://vnshortener.com/member/tools/api"),
-                    InlineKeyboardButton("PʀᴏFɪʟᴇ", url="https://vnshortener.com/member/users/profile"),
+                    InlineKeyboardButton("Aʟʟ Lɪɴᴋs", url="http://nestshortener.com/member/links"),
+                    InlineKeyboardButton("Aᴘɪ", url="http://nestshortener.com/member/tools/api"),
+                    InlineKeyboardButton("PʀᴏFɪʟᴇ", url="http://nestshortener.com/member/users/profile"),
                 ],
                 [
                     InlineKeyboardButton("Hᴇʟᴘ", callback_data="HELP_BUT"),
@@ -184,7 +184,7 @@ async def main(bot: Client, message: Message):
         user = await get_user(message.from_user.id)
 
         if not user["shortener_api"]:
-            return await message.reply_text(f"Fɪʀsᴛ Cᴏɴɴᴇᴄᴛ Wɪᴛʜ Yᴏᴜʀ Wᴇʙsɪᴛᴇ Aᴘɪ\n\n[Cʟɪᴄᴋ Tᴏ Cᴏɴɴᴇᴄᴛ](https://vnshortener.com/member/tools/api)")
+            return await message.reply_text(f"Fɪʀsᴛ Cᴏɴɴᴇᴄᴛ Wɪᴛʜ Yᴏᴜʀ Wᴇʙsɪᴛᴇ Aᴘɪ\n\n[Cʟɪᴄᴋ Tᴏ Cᴏɴɴᴇᴄᴛ](http://nestshortener.com/member/tools/api)")
 
         await add_user_to_database(bot, message)
 
@@ -397,12 +397,12 @@ async def start_back(_, query: CallbackQuery):
 
 START_BACK_BUTTON = [
         [
-            InlineKeyboardButton("Cʟɪᴄᴋ Tᴏ Gᴇᴛ Aᴘɪ", url="https://vnshortener.com/member/tools/api"),
+            InlineKeyboardButton("Cʟɪᴄᴋ Tᴏ Gᴇᴛ Aᴘɪ", url="http://nestshortener.com/member/tools/api"),
         ],
         [
-            InlineKeyboardButton("Aʟʟ Lɪɴᴋs", url="https://vnshortener.com/member/links"),
-            InlineKeyboardButton("Aᴘɪ", url="https://vnshortener.com/member/tools/api"),
-            InlineKeyboardButton("PʀᴏFɪʟᴇ", url="https://vnshortener.com/member/users/profile"),
+            InlineKeyboardButton("Aʟʟ Lɪɴᴋs", url="http://nestshortener.com/member/links"),
+            InlineKeyboardButton("Aᴘɪ", url="http://nestshortener.com/member/tools/api"),
+            InlineKeyboardButton("PʀᴏFɪʟᴇ", url="http://nestshortener.com/member/users/profile"),
         ],
         [
             InlineKeyboardButton("Hᴇʟᴘ", callback_data="HELP_BUT"),
@@ -492,7 +492,7 @@ async def button(bot: Client, cmd: CallbackQuery):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("⚡ 𝖢𝖫𝖨𝖢𝖪 𝖳𝖮 𝖢𝖮𝖭𝖭𝖤𝖢𝖳 ⚡", url="https://vnshortener.com/member/tools/api")
+                        InlineKeyboardButton("⚡ 𝖢𝖫𝖨𝖢𝖪 𝖳𝖮 𝖢𝖮𝖭𝖭𝖤𝖢𝖳 ⚡", url="http://nestshortener.com/member/tools/api")
                     ],
                     [
                         InlineKeyboardButton("❓ 𝖧𝖮𝖶 𝖳𝖮 𝖢𝖮𝖭𝖭𝖤𝖢𝖳 ❓", url="https://t.me/abmoviehouse")
