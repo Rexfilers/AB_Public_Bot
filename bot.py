@@ -42,7 +42,7 @@ from plugins.users_api import get_user, update_user_info
 
 MediaList = {}
 
-START_MEDIA = "https://graph.org/file/250eaf9cebf980980df65.jpg"
+START_MEDIA = "https://telegra.ph/file/ee88be6635e34cd82abb6.jpg"
 
 START_TEXT = """**Hɪ/Hᴇʟʟᴏ [{}](tg://user?id={})**
 
@@ -58,25 +58,25 @@ I'ᴍ Uʟᴛʀᴀ Fᴀsᴛ Tᴇʟᴇɢʀᴀᴍ Cᴏᴜʟᴅ Sᴛᴏʀᴀɢᴇ B�
 
 Mᴏʀᴇ Fᴏʀᴍᴀᴛs Cᴏᴍᴍɪɴɢ Sᴏᴏɴ ......
 
-Pᴏᴡᴇʀᴇᴅ Bʏ - @abmoviehouse"""
+Pᴏᴡᴇʀᴇᴅ Bʏ - @MOVIES_PROVIDE"""
 
 ABOUT_BOT_TEXT = f"""
 This is Permanent File/Links Store Bot!
 Send me any file I will save it in my Database. Also works for channel. Add me to channel as Admin with Edit Permission, I will add Save Uploaded File in Channel & add Sharable Button Link.
 
-🤖 **My Name:** [AMIR BISTA](https://t.me/AB_BotZ_Update)
+🤖 **My Name:** [MOVIES PROVIDE](https://t.me/MOVIES_PROVIDE)
 
 📝 **Language:** [Python3](https://www.python.org)
 
 📚 **Library:** [Pyrogram](https://docs.pyrogram.org)
 
-👑 **Owner:** @Ab_Admin0
+👑 **Owner:** @Rexisop99
 
-🧑🏻‍💻 **Developer:** @Ab_Admin0
+🧑🏻‍💻 **Developer:** @Rexisop99
 
-👥 **Support Group:** @abmovierequestgroup
+👥 **Support Group:** @MOVIES_PROVIDE2
 
-📢 **Updates Channel:** @AB_BotZ_Update 
+📢 **Updates Channel:** @MOVIES_PROVIDE
 """
 
 HELP_TEXT = """**Hᴏᴡ Tᴏ Cᴏɴɴᴇᴄᴛ Wɪᴛʜ Wᴇʙsɪᴛᴇ:**
@@ -135,12 +135,12 @@ async def start(bot: Client, cmd: Message):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                    InlineKeyboardButton("Cʟɪᴄᴋ Tᴏ Gᴇᴛ Aᴘɪ", url="http://nestshortener.com/member/tools/api"),
+                    InlineKeyboardButton("Cʟɪᴄᴋ Tᴏ Gᴇᴛ Aᴘɪ", url="http://omegalinks.in/member/tools/api"),
                 ],
                 [
-                    InlineKeyboardButton("Aʟʟ Lɪɴᴋs", url="http://nestshortener.com/member/links"),
-                    InlineKeyboardButton("Aᴘɪ", url="http://nestshortener.com/member/tools/api"),
-                    InlineKeyboardButton("PʀᴏFɪʟᴇ", url="http://nestshortener.com/member/users/profile"),
+                    InlineKeyboardButton("Aʟʟ Lɪɴᴋs", url="http://omegalinks.in/member/links"),
+                    InlineKeyboardButton("Aᴘɪ", url="http://omegalinks.in/member/tools/api"),
+                    InlineKeyboardButton("PʀᴏFɪʟᴇ", url="http://omegalinks.in/member/users/profile"),
                 ],
                 [
                     InlineKeyboardButton("Hᴇʟᴘ", callback_data="HELP_BUT"),
@@ -184,7 +184,7 @@ async def main(bot: Client, message: Message):
         user = await get_user(message.from_user.id)
 
         if not user["shortener_api"]:
-            return await message.reply_text(f"Fɪʀsᴛ Cᴏɴɴᴇᴄᴛ Wɪᴛʜ Yᴏᴜʀ Wᴇʙsɪᴛᴇ Aᴘɪ\n\n[Cʟɪᴄᴋ Tᴏ Cᴏɴɴᴇᴄᴛ](http://nestshortener.com/member/tools/api)")
+            return await message.reply_text(f"Fɪʀsᴛ Cᴏɴɴᴇᴄᴛ Wɪᴛʜ Yᴏᴜʀ Wᴇʙsɪᴛᴇ Aᴘɪ\n\n[Cʟɪᴄᴋ Tᴏ Cᴏɴɴᴇᴄᴛ](http://omegalinks.in/member/tools/api)")
 
         await add_user_to_database(bot, message)
 
@@ -194,7 +194,7 @@ async def main(bot: Client, message: Message):
                 return
 
         if message.from_user.id in Config.BANNED_USERS:
-            await message.reply_text("Sorry, You are banned!\n\nContact [My Owner](https://t.me/Ab_Admin0)",
+            await message.reply_text("Sorry, You are banned!\n\nContact [My Owner](https://t.me/Rexisop99)",
                                      disable_web_page_preview=True)
             return
 
@@ -397,12 +397,12 @@ async def start_back(_, query: CallbackQuery):
 
 START_BACK_BUTTON = [
         [
-            InlineKeyboardButton("Cʟɪᴄᴋ Tᴏ Gᴇᴛ Aᴘɪ", url="http://nestshortener.com/member/tools/api"),
+            InlineKeyboardButton("Cʟɪᴄᴋ Tᴏ Gᴇᴛ Aᴘɪ", url="http://omegalinks.in/member/tools/api"),
         ],
         [
-            InlineKeyboardButton("Aʟʟ Lɪɴᴋs", url="http://nestshortener.com/member/links"),
-            InlineKeyboardButton("Aᴘɪ", url="http://nestshortener.com/member/tools/api"),
-            InlineKeyboardButton("PʀᴏFɪʟᴇ", url="http://nestshortener.com/member/users/profile"),
+            InlineKeyboardButton("Aʟʟ Lɪɴᴋs", url="http://omegalinks.in/member/links"),
+            InlineKeyboardButton("Aᴘɪ", url="http://omegalinks.in/member/tools/api"),
+            InlineKeyboardButton("PʀᴏFɪʟᴇ", url="http://omegalinks.in/member/users/profile"),
         ],
         [
             InlineKeyboardButton("Hᴇʟᴘ", callback_data="HELP_BUT"),
@@ -424,7 +424,7 @@ async def help(_, query: CallbackQuery):
 
 HELP_BUTTON = [
         [
-            InlineKeyboardButton("🔰Join Update Channel 🔰", url="https://t.me/AB_BotZ_Update"),
+            InlineKeyboardButton("🔰Join Update Channel 🔰", url="https://t.me/MOVIES_PROVIDE"),
         ],
         [
             InlineKeyboardButton("Hᴇʟᴘ 🔘", callback_data="HELP_BUT"),
@@ -442,7 +442,7 @@ async def about(_, query: CallbackQuery):
 
 ABOUT_BUTTON = [
         [
-            InlineKeyboardButton("🔰Join Update Channel 🔰", url="https://t.me/AB_BotZ_Update"),
+            InlineKeyboardButton("🔰Join Update Channel 🔰", url="https://t.me/MOVIES_PROVIDE"),
         ],
         [
             InlineKeyboardButton("Hᴇʟᴘ", callback_data="HELP_BUT"),
@@ -492,13 +492,13 @@ async def button(bot: Client, cmd: CallbackQuery):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("⚡ 𝖢𝖫𝖨𝖢𝖪 𝖳𝖮 𝖢𝖮𝖭𝖭𝖤𝖢𝖳 ⚡", url="http://nestshortener.com/member/tools/api")
+                        InlineKeyboardButton("⚡ 𝖢𝖫𝖨𝖢𝖪 𝖳𝖮 𝖢𝖮𝖭𝖭𝖤𝖢𝖳 ⚡", url="http://omegalinks.in/member/tools/api")
                     ],
                     [
-                        InlineKeyboardButton("❓ 𝖧𝖮𝖶 𝖳𝖮 𝖢𝖮𝖭𝖭𝖤𝖢𝖳 ❓", url="https://t.me/abmoviehouse")
+                        InlineKeyboardButton("❓ 𝖧𝖮𝖶 𝖳𝖮 𝖢𝖮𝖭𝖭𝖤𝖢𝖳 ❓", url="https://t.me/MOVIES_PROVIDE")
                     ],
                     [
-                        InlineKeyboardButton("⚙️ ʜᴏᴡ ᴛᴏ ᴜsᴇ ⚙️", url="https://t.me/abmoviehouse")
+                        InlineKeyboardButton("⚙️ ʜᴏᴡ ᴛᴏ ᴜsᴇ ⚙️", url="https://t.me/MOVIES_PROVIDE2")
                     ],
                     [
                         InlineKeyboardButton("✅ 𝖠𝖡𝖮𝖴𝖳 𝖡𝖮𝖳 ✅", callback_data="aboutdevs")
@@ -550,8 +550,8 @@ async def button(bot: Client, cmd: CallbackQuery):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("Support Group", url="https://t.me/abmovierequestgroup"),
-                        InlineKeyboardButton("Bots Channel", url="https://t.me/AB_BotZ_Update")
+                        InlineKeyboardButton("Support Group", url="https://t.me/MOVIES_PROVIDE2"),
+                        InlineKeyboardButton("Bots Channel", url="https://t.me/MOVIES_PROVIDE")
                     ],
                     [
                         InlineKeyboardButton("About Bot", callback_data="aboutbot"),
